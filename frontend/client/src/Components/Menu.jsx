@@ -7,7 +7,7 @@ const Menu = ({ onAddToCart }) => {
   useEffect(() => {
     const fetchMenu = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/menu");
+        const res = await axios.get("https://eatoes-assignment.onrender.com/api/menu");
         setMenuItems(res.data);
       } catch (err) {
         console.error("Failed to fetch menu:", err);

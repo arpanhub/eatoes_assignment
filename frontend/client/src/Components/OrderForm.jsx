@@ -8,7 +8,7 @@ const OrderForm = ({ cartItems, onOrderPlaced }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/order", {
+      await axios.post("https://eatoes-assignment.onrender.com/api/order", {
         name,
         phone,
         items: cartItems,

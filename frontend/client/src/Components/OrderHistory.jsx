@@ -8,9 +8,10 @@ const OrderHistory = () => {
 
   const fetchOrders = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/orders/${phone}`);
+      const response = await axios.get(`https://eatoes-assignment.onrender.com/api/orders/${phone}`);
       setOrders(response.data);
       setError("");
+    // eslint-disable-next-line no-unused-vars
     } catch (err) {
       setError("Failed to fetch orders. Please try again.");
     }
