@@ -1,3 +1,4 @@
+# This is an Assingment project
 # The Digital Diner
 
 Welcome to **The Digital Diner**: a simple restaurant ordering system built using the MERN stack and PostgreSQL. 
